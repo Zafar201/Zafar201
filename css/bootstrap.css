@@ -478,8 +478,12 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 85%;
+  max-height: 85%;
   height: auto;
+  align-items: center;
+  margin-left: 30px;
+  object-fit: cover;
 }
 
 .img-thumbnail {
