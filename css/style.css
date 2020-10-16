@@ -229,7 +229,7 @@ a.scroll.bnr-btn i{
 	left: 0;
 	background: rgba(0, 0, 0, 0.5);
 	background-size: cover;
-	opacity: 0.8;
+	opacity: 0.7;
 	background: black;  /* fallback for old browsers */
 	/* background: -webkit-linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59));  /* Chrome 10-25, Safari 5.1-6 */
 	/* background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
