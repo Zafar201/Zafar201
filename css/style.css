@@ -644,6 +644,12 @@ p.paragraph:after {
     padding: 10px;
     border: 4px solid #eee;
 }
+.img-fluid{
+	transition:transform 100ms ease-in;
+}
+.img-fluid:hover{
+   transform: scale(1.10);
+}
 
 /*-- //contact --*/
 
