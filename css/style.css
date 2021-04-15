@@ -466,7 +466,11 @@ Content
 	padding-top: 64px;
 	padding-bottom: 80px;
 	position: relative;
-	background: white;
+	/* background: white; */
+	background: linear-gradient( 
+		0deg
+		 ,#000000 8%,#292929 89%);
+		 color: cyan;
 }
 
 .one-text {
@@ -513,7 +517,7 @@ Content
 	/*Homepage------------------------------------------*/
 	
 	#homepage {
-		background: url(../images/pattern.png);
+		/* background: url(../images/pattern.png); */
 		position: relative;
 		overflow: hidden;
 		height: 100%;

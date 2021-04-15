@@ -32,6 +32,8 @@
 	<link rel="stylesheet" href="css/media.css">
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
 	<!-- [if lt IE 9]> -->
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -120,7 +122,7 @@
 				
 				<h1>About Us</h1>
 				<div class="one-text">
-					<p>A professional Photographer/Videographer Based In Dubai, With a solid experience in video / Photo capturing and editing using best tools of the adobe family (adobe photoshop, adobe premier pro, adobe after effect, adobe illustrator...etc) Certified as Video editor, and as Portrait photographer by SAE institute Dubai.</p>
+					<p style="color: white;">A professional Photographer/Videographer Based In Dubai, With a solid experience in video / Photo capturing and editing using best tools of the adobe family (adobe photoshop, adobe premier pro, adobe after effect, adobe illustrator...etc) Certified as Video editor, and as Portrait photographer by SAE institute Dubai.</p>
 				</div>
 			</div> 
 			
@@ -766,7 +768,7 @@
 	
 	
 	<!-- Start Contact Page -->
-	<div id="contact">
+	<div id="submit-form">
 		<div class="pattern"></div>
 		<div class="container">
 			<div class="sixteen columns">
@@ -778,7 +780,7 @@
     					<ul class="contact-tabs">
     						<li><a href="#" class="active-tab current">Contact</a></li>
     						<li><a href="#">Map</a></li>
-    						<!-- <li><a href="#">Feedback</a></li> -->
+    						<li><a href="#">Feedback</a></li>
     					</ul>
     					
     					<div class="tab-content-wrp">
@@ -789,23 +791,27 @@
         					</div>
         					
         					<div class="lines tab-content">
-        						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462562.84785662167!2d54.947543798340256!3d25.075707331290925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1618469938397!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        						<iframe  width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462562.84785662167!2d54.947543798340256!3d25.075707331290925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1618469938397!5m2!1sen!2sin" ></iframe>
         					</div>
         					
         					<div class="lines tab-content">
         						<div class="result"></div>
                 				
-                				<form class="well">
+                				<form   action="" class="well">
                 					<div class="row">
                 						<div class="span2 pull-left">
-                							<input type="text" name="name" placeholder="Name">
-                							<input type="text" name="email" placeholder="E-mail">
-                							<input type="text" name="subject" placeholder="Subject">
+                							<input type="text" name="Name" placeholder="Name">
+                							<input type="text" name="Email" placeholder="E-mail">
+                							<input type="text" name="Subject" placeholder="Subject">
+											<!-- <textarea class="span6" rows="4" name="message" placeholder="Message"></textarea>
+											<button type="submit">Submit</button> -->
                 						</div>
                 						<div class="span6 pull-right">
                 							<textarea class="span6" rows="4" name="message" placeholder="Message"></textarea>
                 							<button type="submit" class="button"><i class="icon-envelope-alt"></i> Send Message</button>
                 						</div>
+
+									
                 					</div>
                 				</form>
         					</div>
@@ -860,6 +866,26 @@
 	      $("nav").sticky({ topSpacing: 0, className: 'sticky', wrapperClassName: 'my-wrapper' });
 	    });
     </script>
+
+<script>
+	$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbz5aLoBcopOf_6SD4ipUbaw4R8Wt-5pGg4L1gUFBHGVnTT8lb6FhkW2x_KCQU2UwpkIyQ/exec",
+			data:$("#submit-form").serialize(),
+			method:"post",
+			success:function (response){
+				alert("Form submitted successfully")
+				window.location.reload()
+				//window.location.href="https://google.com"
+			},
+			error:function (err){
+				alert(err)
+
+			}
+		})
+	})
+</script>
 	
 	<script>
 		$(function(){
