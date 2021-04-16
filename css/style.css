@@ -103,7 +103,7 @@ img.scaleimg {
 }
 
 .pattern {
-	background: url(../images/pattern.png);
+	/* background: url(../images/pattern.png); */
 	width: 100%;
 	position: absolute;
 }	
@@ -470,7 +470,7 @@ Content
 	background: linear-gradient( 
 		0deg
 		 ,#000000 8%,#292929 89%);
-		 color: cyan;
+		 color: #ffb400;
 }
 
 .one-text {
@@ -633,7 +633,7 @@ Content
 		-webkit-border-radius: 160px;
 		-moz-border-radius: 160px;
 		margin: 24px auto 24px auto;
-		background: #f0f2f5 center center no-repeat;
+		background: black center center no-repeat;
 	}
 	
 	
