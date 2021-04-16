@@ -433,7 +433,7 @@ Parallax
 	}
 	
 	.bg3 {
-		background: url(../images/slider/banner15.jpeg) 50% 50% fixed repeat-y;
+		background: url(../images/slider/banner4.jpeg) 50% 50% fixed repeat-y;
 		width: 100%;
 		height: 100%;
 		margin: 0 auto;
@@ -609,7 +609,7 @@ Content
 	/*Culrute------------------------------------------*/
 
 	.full-width {
-		background: #f0f2f5;
+		/* background: #f0f2f5; */
 		padding: 60px 0px 60px 0px;
 		margin: 53px 0px 54px 0px;
 	}
@@ -773,7 +773,7 @@ Content
 
 	/*Contact------------------------------------------*/
 
-	#contact {
+	#submit-form {
 		width: 100%;
 		height: auto;
 		min-height: 100%;

@@ -35,7 +35,7 @@
 					slides 					:  	[			// Slideshow Images
 						{image : './images/slider/banner2.jpeg', title : 'Maleha Desert <div class="slidedescription">I took this photo in Maleha Desert Located in UAE -  Sharjah with MY Sony Alpha 7 Mark III . I was amazed by quality of the image especially that I captured with the kit lens FE 28-70 f/3.5 - 5.6 </div>', thumb : '', url : 'http://themes.tvda.eu/'},
 						{image : './images/slider/banner3.jpeg', title : '"Fujeriah Mountains"<div class="slidedescription">This how it looks like the sunrise view from the top of fujeriah mountains.I spent the night  camping there then I took my tripod and my Sony to the top just to capture this moment. </div>', thumb : '', url : 'http://themes.tvda.eu/'},
-						{image : './images/slider/banner4.jpeg', title : 'Poli <div class="slidedescription">This Photo was taken during a crispy night of the majestic Dubai Creek Harbour  with my favourite Sony 85 - f1.8 lens</div>', thumb : '', url : 'http://themes.tvda.eu/'},
+						{image : './images/slider/banner7.jpeg', title : 'The Sheikh Zayed Grand Mosque <div class="slidedescription">A majestic sunset for a majestic mosque Located in Abu Dhabi, UAE</div>', thumb : '', url : 'http://themes.tvda.eu/'},
 						{image : './images/slider/banner9.jpeg', title : 'Hatta Dam <div class="slidedescription">Photo of Hatta Dam in Dubai, I "ve captured this one with Sony alpha 7 mark III and tamron 17-28 f-2.8 lens </div>', thumb : '', url : 'http://themes.tvda.eu/'},
 												],
 												
