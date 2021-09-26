@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
 <head>
     <meta charset="utf-8">
-    <title> Personal Portfolio</title>
+    <title>Contact - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
@@ -39,7 +39,7 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 
-<body class="home">
+<body class="contact">
 <!-- Live Style Switcher Starts - demo only -->
 <div id="switcher" class="">
     <div class="content-switcher">
@@ -76,7 +76,8 @@
                 <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
             </li>
         </ul>
-           <div id="hideSwitcher">&times;</div>
+
+        <div id="hideSwitcher">&times;</div>
     </div>
 </div>
 <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
@@ -85,7 +86,7 @@
 <header class="header" id="navbar-collapse-toggle">
     <!-- Fixed Navigation Starts -->
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-        <li class="icon-box active">
+        <li class="icon-box">
             <i class="fa fa-home"></i>
             <a href="index.html">
                 <h2>Home</h2>
@@ -103,7 +104,7 @@
                 <h2>Portfolio</h2>
             </a>
         </li>
-        <li class="icon-box">
+        <li class="icon-box active">
             <i class="fa fa-envelope-open"></i>
             <a href="contact.html">
                 <h2>Contact</h2>
@@ -125,10 +126,10 @@
             <span></span>
             <span></span>
             <ul class="list-unstyled" id="menu">
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
                 <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
                 <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                 <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
             </ul>
         </div>
@@ -136,24 +137,70 @@
     <!-- Mobile Menu Ends -->
 </header>
 <!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>get in <span>touch</span></h1>
+    <span class="title-bg">contact</span>
+</section>
+<!-- Page Title Ends -->
 <!-- Main Content Starts -->
-<section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
-    <div class="color-block d-none d-lg-block"></div>
-    <div class="row home-details-container align-items-center">
-        <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-        <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-            <div>
-                <img src="img/4.png" class="img-fluid main-img-mobile  d-sm-block d-lg-none" alt="my picture" />
-                <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">hi there !</h6>
-                <h1 class="text-uppercase poppins-font"><span>I'm</span> Zafar Irshad</h1>
-                <p class="open-sans-font">1 years experienced MERN stack Developer Specailize in React with hands-on experience in identifying web-based user interactions along with designing,developing & implementing responsive user interface components by deploying React concepts. Proficient in translating designs & wireframes into code, and writing application interface code via Javascript and ReactJS workflows.</p>
-                <a href="about.html" class="btn btn-about">more about me</a>
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side Starts -->
+            <div class="col-12 col-lg-4">
+                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Don't be shy !</h3>
+                <p class="open-sans-font mb-3">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <p class="open-sans-font custom-span-contact position-relative">
+                    <i class="fa fa-envelope-open position-absolute"></i>
+                    <span class="d-block">mail me</span>steve@mail.com
+                </p>
+                <p class="open-sans-font custom-span-contact position-relative">
+                    <i class="fa fa-phone-square position-absolute"></i>
+                    <span class="d-block">call me</span>+216 21 184 010
+                </p>
+                <ul class="social list-unstyled pt-1 mb-5">
+                    <li class="facebook"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="twitter"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="youtube"><a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li class="dribbble"><a title="Dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
             </div>
+            <!-- Left Side Ends -->
+            <!-- Contact Form Starts -->
+            <div class="col-12 col-lg-8">
+                <form class="contactform" method="post" action="http://slimhamdi.net/tunis/dark/php/process-form.php">
+                    <div class="contactform">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <input type="text" name="name" placeholder="YOUR NAME">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="email" name="email" placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                                <button type="submit" class="btn btn-contact">Send Message</button>
+                            </div>
+                            <div class="col-12 form-message">
+                                <span class="output_message text-center font-weight-600 text-uppercase"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Contact Form Ends -->
         </div>
     </div>
-</section>
-<!-- Main Content Ends -->
 
+</section>
 <!-- Template JS Files -->
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
@@ -169,5 +216,6 @@
 <script src="js/custom.js"></script>
 
 </body>
+
 
 </html>
