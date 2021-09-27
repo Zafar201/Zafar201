@@ -37,6 +37,8 @@
 
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="contact">
@@ -110,12 +112,12 @@
                 <h2>Contact</h2>
             </a>
         </li>
-        <li class="icon-box">
+        <!-- <li class="icon-box">
             <i class="fa fa-comments"></i>
             <a href="blog.html">
                 <h2>Blog</h2>
             </a>
-        </li>
+        </li> -->
     </ul>
     <!-- Fixed Navigation Ends -->
     <!-- Mobile Menu Starts -->
@@ -130,7 +132,7 @@
                 <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
                 <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
                 <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                <!-- <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li> -->
             </ul>
         </div>
     </nav>
@@ -149,31 +151,31 @@
         <div class="row">
             <!-- Left Side Starts -->
             <div class="col-12 col-lg-4">
-                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Don't be shy !</h3>
+                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Lets Connect !</h3>
                 <p class="open-sans-font mb-3">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                 <p class="open-sans-font custom-span-contact position-relative">
                     <i class="fa fa-envelope-open position-absolute"></i>
-                    <span class="d-block">mail me</span>steve@mail.com
+                    <span class="d-block">mail me</span>zafarirshad201@gmail.com
                 </p>
                 <p class="open-sans-font custom-span-contact position-relative">
                     <i class="fa fa-phone-square position-absolute"></i>
-                    <span class="d-block">call me</span>+216 21 184 010
+                    <span class="d-block">call me</span>+91 7356869551
                 </p>
                 <ul class="social list-unstyled pt-1 mb-5">
-                    <li class="facebook"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    <li class="facebook"><a title="Facebook" href="https://www.instagram.com/zafar_irshad_/"><i class="fa fa-instagram"></i></a>
                     </li>
-                    <li class="twitter"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    <li class="twitter"><a title="Twitter" href="https://api.whatsapp.com/send?phone=+919633700481"><i class="fa fa-whatsapp"></i></a>
                     </li>
-                    <li class="youtube"><a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                    <li class="youtube"><a title="Youtube" href="https://www.linkedin.com/in/zafar-irshad-4855a21b3/"><i class="fa fa-linkedin"></i></a>
                     </li>
-                    <li class="dribbble"><a title="Dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                    <li class="dribbble"><a title="Dribbble" href="https://github.com/Zafar201/"><i class="fa fa-github"></i></a>
                     </li>
                 </ul>
             </div>
             <!-- Left Side Ends -->
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" action="http://slimhamdi.net/tunis/dark/php/process-form.php">
+                <form class="contactform" id="submit-form" action="" method="post">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
@@ -214,6 +216,26 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
+
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbyMsz7TROqjTdmTJCdVWeDGaZp-8bRF-9FSD--qTOBoha1dKgrZjN7bbY8EF_m9mjzx/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                // window.location.href="thankyou.html"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 
 </body>
 
